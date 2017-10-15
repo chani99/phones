@@ -17,7 +17,7 @@
             if (array_key_exists("id", $params)) $this->id = $params["id"];  
             if (array_key_exists("name", $params)) $this->name = $params["name"];
             if (array_key_exists("image", $params)) $this->image = $params["image"];
-            if (array_key_exists("manu_name", $params)) $this->manu_name = $params["manu_name"];
+            if (array_key_exists("manu", $params)) $this->manu_name = $params["manu"];
             
 
         
@@ -66,10 +66,10 @@
 
         public function jsonSerialize() {
             return [
-                "Phone ID" => $this->id,
-                "Phone Name" => $this->name,
-                "Image Name" => $this->image,
-                "Manufacturer Name" => $this->manu_name
+                "Phone_ID" => $this->id,
+                "Phone_Name" => $this->name,
+                "Image_Name" => $this->image,
+                "Manufacturer_Name" => $this->manu_name
             ];
         }
     }
