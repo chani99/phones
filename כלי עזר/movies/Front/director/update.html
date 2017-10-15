@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Create Leads</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/director/style_d.css">
+
+
+</head>
+
+<body>
+
+    <div class="myform container">
+        <h2> Update director </h2>
+        </br>
+        <label for="id">Director Id:</label> </br>
+        <input type="number" id="id" placeholder="leads id" maxlength="4"></br>
+        <div id="id_error"></div>
+        </br>
+        <div class="hide" id="hide">
+            <h4> Update values:</h4>
+
+            <label for="name">Name:</label> </br>
+            <input type="text" id="name" placeholder="Director name" class="margin_bottom"> </br>
+            </br>
+            <button id="submit" value="update" class="btn btn-primary margin_bottom">Update Director</button>
+            </br>
+            <div id="result" class="margin_bottom"></div>
+        </div>
+
+    </div>
+
+    <script src='../scripts/directors/director_main.js'></script>
+    <script src='../scripts/directors/director_model_controller.js'></script>
+    <script src='../scripts/directors/directorModel.js'></script>
+    <script src="../scripts/Validation-CS.js"></script>
+    <script src="../scripts/ajax.js"></script>
+    <script src="../scripts/callback.js"></script>
+
+</body>
+
+</html>

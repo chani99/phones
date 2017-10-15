@@ -1,0 +1,10 @@
+.margin_bottom {
+  margin-bottom: 20px;
+}
+input {
+  width: 250px;
+  height: 45px;
+}
+button {
+  margin: 10px;
+}

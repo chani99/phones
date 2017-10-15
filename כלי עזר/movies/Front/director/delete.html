@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Delete Director</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/director/style_d.css">
+
+
+</head>
+
+<body>
+
+    <div class="myform container">
+        <h2> Delete a director </h2>
+        </br>
+
+        <label for="id" class="margin_bottom">Director Id:</label> </br>
+        <input type="number" id="id" placeholder="Director id" maxlength="4"></br>
+        <div id="id_error" class="margin_bottom"></div>
+        </br>
+        <div id="hide" class="hide">
+            <button id="submit" value="delete" class="btn-primary btn margin_bottom">Delete Lead</button>
+            </br>
+            <span id="result"></span>
+
+        </div>
+
+        <script src='../scripts/directors/director_main.js'></script>
+        <script src='../scripts/directors/director_model_controller.js'></script>
+        <script src='../scripts/directors/directorModel.js'></script>
+        <script src="../scripts/Validation-CS.js"></script>
+        <script src="../scripts/ajax.js"></script>
+        <script src="../scripts/callback.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@tablets: ~"only screen and (min-width: 479px)";
+@desktops: ~"only screen and (min-width: 959px)";
+
+@font-size--large: 24px;
+@font-size--medium: 12px;
+
+* {
+    box-sizing: border-box
+}
+
+body {
+	font-size: @font-size--medium;
+
+	@media @tablets, @desktops {
+		font-size: @font-size--large;
+	}
+}
+
+@paddingBase: 10px;
+
+.calctopleft(@dim) {
+    top: calc(@dim * @paddingBase);
+    left: calc(@dim * @paddingBase)
+}
+
+#cmp-one {
+    .example {
+        margin-bottom: 20px;
+         .box {
+                width: 150px;
+                height: 150px;
+            }
+            .blue {
+                background-color: blue
+            }
+
+            .red {
+                background-color: red
+            }
+
+            .yellow {
+                background-color: yellow
+            }
+        &.a {
+            .box {
+                  padding: @paddingBase;
+            }
+        }
+        &.b {
+            position: relative;
+            .box {
+                position: absolute;
+            }
+            .blue {
+                .calctopleft(1)
+            }
+             .red {
+                .calctopleft(2)
+            }
+
+            .yellow {
+               .calctopleft(3)
+            }
+
+        }
+
+
+    }
+}
+
+.example.c {
+    margin-bottom: 60px;
+     .box {
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+    }
+    .blue {
+        background-color: blue
+    }
+
+    .red {
+        background-color: red
+    }
+
+    .yellow {
+        background-color: yellow
+    }
+}
