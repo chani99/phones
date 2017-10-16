@@ -34,9 +34,9 @@
         // Updates a line in directos table
         function ReturnSelect() {
             $List =  $this->db->SelectAllFromTable($this->table_name, $this->classneame);
-            $DirectorSelect="<option value='Select a manufacturer'>Select a manufacturer</option>";
+            $manuSelect="<option value='Select a manufacturer'>Select a manufacturer</option>";
                 for ($i = 0; $i < count($List); $i++) {
-                $manuSelect .= "<option value=" . $List[$i]["id"] . ">" . $List[$i]["name"] . "</option>";
+                $manuSelect .= "<option value=" . $List[$i]["name"] . ">" . $List[$i]["name"] . "</option>";
                 }
         
             return $manuSelect; 

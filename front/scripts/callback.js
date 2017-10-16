@@ -8,7 +8,7 @@ function callback(response_text, calltype) {
             wasDone(respnse, 'created');
             break;
         case 'getall':
-createtemps(respnse);
+            createtemps(respnse);
             break;
         case 'find_id':
             idtest(respnse);
@@ -43,7 +43,7 @@ function wasDone(response_text, calltype) {
 
 
 function insertlist(response_text) {
-    $("#select_id").html(response_text);
+    $("#select_manu").html(response_text);
 }
 
 

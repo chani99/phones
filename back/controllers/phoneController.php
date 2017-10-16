@@ -18,7 +18,7 @@
         // Creates a new line in director table
         function CreatePhone($param) {
             $c = new phoneModel($param);
-            if($c->getName() != 'null' && $c->getd_id() != 'null'){
+            if($c->getName() != 'null'){
             $column="name, manu, image";
             $values=":name, :manu, :image";
             $exicute = array(

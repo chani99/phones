@@ -4,7 +4,8 @@ $(document).ready(function() {
 
     $('#submit').click(function() {
         let name;
-        let id;
+        let manu;
+        let image;
         let value = $('#submit').val();
         let phones_model = new PhonesModuleController();
 
@@ -12,7 +13,9 @@ $(document).ready(function() {
         switch (value) {
             case 'create':
                 name = $('#name').val();
-                phones_model.createPhone(name);
+                // image = $('#pic').prop('files')[0];
+                manu = $("#select_manu option:selected").val();
+                phones_model.createPhone(name, manu);
                 break;
 
             case 'get-all':
@@ -30,11 +33,4 @@ $(document).ready(function() {
     //     dirercotr_model.CheckIfIdExist(id);
 
 
-    });
-
-
-
-
-
-
-
+});

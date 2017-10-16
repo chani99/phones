@@ -2,7 +2,7 @@
     // and creates a director model and then sends it to ajax
     var PhonesModuleController = function() {
         let PhonesApiMethod = 'phones';
-        let customerApiUrl = "../back/api/api.php";
+        let customerApiUrl = "../../back/api/api.php";
         var data = {
             ctrl: PhonesApiMethod
         };
@@ -11,10 +11,10 @@
 
         return {
 
-            createPhone: function(name, manu, image) {
+            createPhone: function(name, manu) {
                 data.name = name;
                 data.manu = manu;
-                data.image = image;
+                // data.image = image;
                 send = Object.create(Phone);
                 send.newPhone(data);
                 if (send.getname() != false) {
@@ -46,19 +46,19 @@
             //         sendAJAX("PUT", customerApiUrl, data, 'update');
             //     }
 
-            }
+        }
 
-            // deleteDirector: function(id) {
-            //     data.id = id;
-            //     send = Object.create(Director);
-            //     send.newDirector(data);
-            //     if (send.getid() != false) {
-            //         sendAJAX("DELETE", customerApiUrl, data, 'delete');
-            //     }
+        // deleteDirector: function(id) {
+        //     data.id = id;
+        //     send = Object.create(Director);
+        //     send.newDirector(data);
+        //     if (send.getid() != false) {
+        //         sendAJAX("DELETE", customerApiUrl, data, 'delete');
+        //     }
 
 
 
-            // }
+        // }
         // }
 
     }

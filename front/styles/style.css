@@ -1,44 +1,36 @@
 * {
-    margin: auto 0;
-    text-align: center;
-    box-sizing: border-box;
+  margin: auto 0;
+  text-align: center;
+  box-sizing: border-box;
 }
-
-body {
-    background-color: lightgray;
-}
-
 button {
-    min-width: 260px;
+  min-width: 260px;
 }
-
 .myform {
-    margin-top: 50px;
-    background-color: white;
-    padding: 50px;
+  margin-top: 50px;
+  background-color: #EFEBEB;
+  padding: 50px;
 }
-
 .myform table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    max-width: 300px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 300px;
 }
-
 .myform table td,
 .myform table th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
-
 .myform table tr:nth-child(even) {
-    background-color: #dddddd;
+  background-color: #dddddd;
 }
-
+#submit {
+  margin-bottom: 50px;
+}
 .error {
-    color: red;
+  color: red;
 }
-
 .hide {
-    display: none;
+  display: none;
 }
