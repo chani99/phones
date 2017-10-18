@@ -11,10 +11,10 @@
 
         return {
 
-            createPhone: function(name, manu) {
+            createPhone: function(name, file_name, manu) {
                 data.name = name;
+                data.image = file_name;
                 data.manu = manu;
-                // data.image = image;
                 send = Object.create(Phone);
                 send.newPhone(data);
                 if (send.getname() != false) {
