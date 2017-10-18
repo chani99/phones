@@ -1,14 +1,29 @@
 * {
-  margin: auto 0;
-  text-align: center;
   box-sizing: border-box;
 }
 button {
-  min-width: 260px;
+  min-width: 300px;
+}
+label {
+  margin-top: 20px;
+}
+#submit,
+#but {
+  margin-top: 20px;
+}
+.form-control {
+  max-width: 300px;
+}
+.btn-warning {
+  color: black;
+  min-width: 300px;
+  min-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .myform {
   margin-top: 50px;
-  background-color: #EFEBEB;
+  background-color: #c4c3c3;
   padding: 50px;
 }
 .myform table {

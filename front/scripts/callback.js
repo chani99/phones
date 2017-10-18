@@ -1,7 +1,7 @@
 // "use static";
 
 // Gets results from ajax and sends it to the right method
-function callback(response_text, calltype) {
+function callback(response_text, calltype, manu) {
     var respnse = JSON.parse(response_text);
 
     switch (calltype) {
@@ -11,7 +11,7 @@ function callback(response_text, calltype) {
             break;
 
         case 'getall':
-            createtemps(respnse);
+            createtemps(respnse, manu);
             break;
 
         case 'find_id':
@@ -54,7 +54,7 @@ function wasDone(response_text, calltype) {
 
 
 function insertlist(response_text) {
-    $("#select_manu").html(response_text);
+    $("#select_manu, #select_manufac").html(response_text);
 }
 
 

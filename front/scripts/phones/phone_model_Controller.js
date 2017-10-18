@@ -23,42 +23,15 @@
                 }
             },
 
-            // CheckIfIdExist: function(id) {
-            //     data.id = id;
-            //     send = Object.create(Director);
-            //     send.newDirector(data);
-            //     if (send.getid() != false) {
-            //         sendAJAX("GET", customerApiUrl, data, 'find_id');
-            //     }
 
-            // },
 
-            GetAllPhones: function() {
-                sendAJAX("GET", customerApiUrl, data, 'getall');
+            GetAllPhones: function(manu) {
+                sendAJAX("GET", customerApiUrl, data, 'getall', manu);
             },
 
-            // UpdateDirectors: function(id, name) {
-            //     data.id = id;
-            //     data.name = name;
-            //     send = Object.create(Director);
-            //     send.newDirector(data);
-            //     if (send.getid() != false && send.getname() != false) {
-            //         sendAJAX("PUT", customerApiUrl, data, 'update');
-            //     }
+
 
         }
 
-        // deleteDirector: function(id) {
-        //     data.id = id;
-        //     send = Object.create(Director);
-        //     send.newDirector(data);
-        //     if (send.getid() != false) {
-        //         sendAJAX("DELETE", customerApiUrl, data, 'delete');
-        //     }
-
-
-
-        // }
-        // }
-
+    
     }

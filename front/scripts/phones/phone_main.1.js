@@ -1,8 +1,6 @@
 "use static";
 
 $(document).ready(function() {
-    let phones_model = new PhonesModuleController();
-    
 
     $('#submit').click(function() {
         let name;

@@ -1,12 +1,12 @@
     "use static";
 
-    function sendAJAX(method, url, data, calltype) {
+    function sendAJAX(method, url, data, calltype, manu) {
         $.ajax({
             type: method,
             url: url,
             data: { activitiesArray: data },
             success: function(response_text) {
-                callback(response_text, calltype);
+                callback(response_text, calltype, manu);
             }
 
         });

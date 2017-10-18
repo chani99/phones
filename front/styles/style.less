@@ -1,6 +1,6 @@
+@field-widte:300px;
+
 * {
-    margin: auto 0;
-    text-align: center;
     box-sizing: border-box;
 }
 
@@ -9,18 +9,39 @@
 // }
 
 button {
-    min-width: 260px;
+    min-width: @field-widte;
+}
+ 
+label {
+    margin-top: 20px;
 }
 
+#submit,
+#but{
+    margin-top: 20px;
+    
+}
+.form-control{
+    max-width: @field-widte;
+}
+
+
+.btn-warning{
+    color: black;
+    min-width: @field-widte;
+    min-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+}
 .myform {
     margin-top: 50px;
-    background-color: #EFEBEB;
+    background-color: rgb(196, 195, 195);
     padding: 50px;
 
     table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
-        max-width: 300px;
+        max-width: @field-widte;
 
         td,
         th {
@@ -34,6 +55,7 @@ button {
     }
     
 }
+
 
 #submit {
     margin-bottom: 50px;
