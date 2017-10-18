@@ -3,26 +3,37 @@
 // Gets results from ajax and sends it to the right method
 function callback(response_text, calltype) {
     var respnse = JSON.parse(response_text);
+    
     switch (calltype) {
+
         case 'create':
             wasDone(respnse, 'created');
             break;
+
         case 'getall':
             createtemps(respnse);
             break;
+
         case 'find_id':
             idtest(respnse);
             break;
+
         case 'delete':
             wasDone(respnse, 'deleted');
             break;
-        case 'update':
 
+        case 'update':
             wasDone(respnse, 'updated');
             break;
+
         case 'selectlist':
             insertlist(respnse);
             break;
+            
+        case 'upload':
+            wasDone(respnse, 'uploaded');
+            break;
+ 
         default:
             alert('Erorr!');
     }

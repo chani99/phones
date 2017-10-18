@@ -4,17 +4,17 @@
     
 
     $method = $_SERVER['REQUEST_METHOD']; 
-    // $method = "GET"; 
+    $params = $_REQUEST['activitiesArray'];
 
-    // if($method == 'PUT' || $method == 'DELETE') {
-    //     parse_str(file_get_contents("php://input"),$post_vars);
-    //     $params = $post_vars['activitiesArray']; 
-    // }
-    // else{
-        $params = $_REQUEST['activitiesArray'];
-        // $params = ["ctrl" => "phones"];
+// handle files uploaded
+    if ( 0 < $_FILES['file']['error'] ) {
+        echo false;
+    }
+    else {
+        move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);
+        echo true;
+    }
 
-    // }
     
 
     switch ($params['ctrl']) {
