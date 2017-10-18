@@ -52,6 +52,7 @@ function wasDone(response_text, calltype) {
 
 }
 
+// inserts the select list into the html
 
 function insertlist(response_text) {
     $("#select_manu, #select_manufac").html(response_text);

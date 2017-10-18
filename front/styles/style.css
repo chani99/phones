@@ -26,20 +26,6 @@ label {
   background-color: #c4c3c3;
   padding: 50px;
 }
-.myform table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  max-width: 300px;
-}
-.myform table td,
-.myform table th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-.myform table tr:nth-child(even) {
-  background-color: #dddddd;
-}
 #submit {
   margin-bottom: 50px;
 }
